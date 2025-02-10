@@ -5,6 +5,7 @@ from supabase import create_client
 from assets import MODELS_USED
 
 load_dotenv()
+st.session_state.clear()
 def get_api_key(model):
     """
     Returns an API key for a given model by:
